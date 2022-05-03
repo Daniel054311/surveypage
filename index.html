@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normination forms</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">FACULTY OF APPLIED SCIENCE RECOGNITION AWARDS</h1>
+          <p id="description" class="description text-center">
+          The <strong>NORMINATION</strong> is now open for any student in the Faculty
+          </p>
+        </header>
+        <form id="normination-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Eg:danielkojoforson27@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="18"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Choose current level?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current level</option>
+              <option value="student">B-Techlevel 100</option>
+              <option value="job">B-Techlevel 200 </option>
+              <option value="learner"> Hnd-level 100</option>
+              <option value="preferNo">Hnd-level 200</option>
+              <option value="other">Hnd-level 300</option>
+              <option value="other">B-Tech Top-up</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Choose your Programme of Study?</p>
+            <label>
+              <input
+                name="user-programme"
+                value="Computer-science"
+                type="radio"
+                class="input-radio"
+                checked
+              />Computer-science</label
+            >
+            <label>
+              <input
+                name="user-programme"
+                value="Hospitality"
+                type="radio"
+                class="input-radio"
+              />Hospitality</label
+            >
+      
+            <label
+              ><input
+                name="user-progarmme"
+                value="Math-and-Stath"
+                type="radio"
+                class="input-radio"
+              />Math-and-Stath</label
+            >
+
+            <label
+            ><input
+              name="user-progarmme"
+              value="Medical-Lab"
+              type="radio"
+              class="input-radio"
+            />Medical-Lab</label
+          >
+          </div>
+      
+          <div class="form-group">
+            <p>
+             Choose from the <strong>CATEGORY</strong> ?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Level 100 student of the year</option>
+              <option value="projects">Level 200 student of the year</option>
+              <option value="community">Level 300 student of the year</option>
+              <option value="openSource">Computer-science student of the year</option>
+              <option value="openSource">Math-and-Stath student of the year</option>
+              <option value="openSource">Most-popular student of the year</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to recomend for the Faculty to stress more on?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="accademic-affairs"
+                type="checkbox"
+                class="input-checkbox"
+              />accademic-affairs</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Entertainment"
+                type="checkbox"
+                class="input-checkbox"
+              />Entertainment</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Sports"
+                type="checkbox"
+                class="input-checkbox"
+              />Sports</label
+            >
+            
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions for the Faculty?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+        <footer>Danny Kay @ 2022 || All &copy Right Reserved</footer>
+      </div>
+      
+      
+
+      <!--THIS IS THE CSS PART-->
+
+      <style>
+      
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(53, 57, 61, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://th.bing.com/th/id/OIP.2M6-wtEXyRK8kEc_CDEK5gAAAA?w=227&h=80&c=7&r=0&o=5&dpr=1.75&pid=1.7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+#title,
+#description{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 3%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+.form-group{
+
+   background-color: rgb(175, 238, 191); 
+}
+#submit:hover{
+background-color: #80bdff;
+}
+#submit:active{
+
+    background-color: lawngreen;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #4f40d6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+</style>
+
+      
+       
+</body>
+</html>
